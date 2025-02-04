@@ -60,7 +60,7 @@ class StreamingServiceTest {
 
     @Test
     void countContentByGenreTest() {
-        Map<Genre, Integer> result = service.countContentByGenre();
+        Map<Genre, Long> result = service.countContentByGenre();
 
         assertEquals(5, result.size());
         assertEquals(2, result.get(Genre.HORROR));

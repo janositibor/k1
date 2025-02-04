@@ -21,7 +21,7 @@ class TrainRepositoryTest {
         MariaDbDataSource dataSource = new MariaDbDataSource();
         try {
             dataSource.setUrl("jdbc:mariadb://localhost:3306/finalexamtest?useUnicode=true");
-            dataSource.setUser("trainsRoot");
+            dataSource.setUser("trainsUser");
             dataSource.setPassword("training");
         } catch (SQLException sqle) {
             throw new IllegalStateException("Cannot reach DataBase!", sqle);
